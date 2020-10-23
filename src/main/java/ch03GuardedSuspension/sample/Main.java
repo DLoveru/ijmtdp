@@ -3,8 +3,9 @@ package ch03GuardedSuspension.sample;
 public class Main {
     public static void main(String[] args) {
         RequestQueue requestQueue = new RequestQueue();
-        new ClientThread(requestQueue, "Alice", 3141592L).start();
-        new ServerThread(requestQueue, "Bobby", 6535897L).start();
+        new ClientThread(requestQueue, "客户端001", 3141592L).start();
+        new ClientThread(requestQueue, "客户端002", 3156666L).start();
+        new ServerThread(requestQueue, "服务端001", 6535897L).start();
     }
 }
 /*

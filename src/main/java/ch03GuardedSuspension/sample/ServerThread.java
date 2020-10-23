@@ -15,7 +15,7 @@ public class ServerThread extends Thread {
     public void run() {
         for (int i = 0; i < 10000; i++) {
             Request request = requestQueue.getRequest();
-            System.out.println(Thread.currentThread().getName() + " handles  " + request);
+            System.out.println(Thread.currentThread().getName() + " 处理请求  " + request);
             try {
                 Thread.sleep(random.nextInt(1000));
             } catch (InterruptedException e) {

@@ -12,6 +12,6 @@ public class Request {
     }
 
     public String toString() {
-        return "[ Request " + name + " ]";
+        return "[ 请求： " + name + " ]";
     }
 }
