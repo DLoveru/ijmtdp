@@ -13,7 +13,7 @@ public class Helper {
 
     private void slowly() {
         try {
-            Thread.sleep(100);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
         }
     }
